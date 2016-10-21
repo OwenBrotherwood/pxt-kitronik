@@ -14,6 +14,7 @@ The Motor driver board allows to operator 2 motors with higher current.
 ```blocks
 kitronik.motorCommand(Motor.Motor1And2, MotorCommand.Forward);
 ```
+
 * Turn around
 ```blocks
 kitronik.motorCommand(Motor.Motor1, MotorCommand.Forward);

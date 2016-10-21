@@ -1,14 +1,12 @@
 {
     "name": "kitronik",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A set of PXT functions for Kitronik kits",
     "license": "MIT",
     "dependencies": {
-        "microbit": "*"
+        "core": "*"
     },
     "files": [
-        "enums.d.ts",
-        "shims.d.ts",
         "README.md",
         "main.ts"
     ],

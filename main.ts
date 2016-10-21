@@ -1,10 +1,10 @@
 enum Motor {
-    //% block=1
+    //% block=1 blockIdentity=kitronik.motorId
     Motor1 = 0x01,
-    //% block=2
+    //% block=2 blockIdentity=kitronik.motorId
     Motor2 = 0x10,
-    //% block="1&2"
-    Motor1And2 = 0x11 
+    //% block="1&2" blockIdentity=kitronik.motorId
+    Motor1And2 = 0x11
 }
 
 enum MotorCommand {
@@ -46,7 +46,7 @@ namespace kitronik {
             case MotorCommand.Forward: p0v = 1; break;
             case MotorCommand.Reverse: p1v = 1; break;
             case MotorCommand.Brake: p0v = 1; p1v = 1; break;
-            default: 
+            default:
             //case MotorCommand.Coast:
         }
         pins.digitalWritePin(p0, p0v);
@@ -60,6 +60,6 @@ namespace kitronik {
     //% blockId=kitronik_motor_id block="%motor"
     //% shim=TD_ID    
     export function motorId(motor: Motor): number {
-        return motor;        
+        return motor;
     }
 }
